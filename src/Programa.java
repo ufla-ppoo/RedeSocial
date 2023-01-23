@@ -16,7 +16,7 @@ public class Programa {
     private FeedNoticias feed;
 
     // usado para obter dados do usuário via terminal
-    Scanner entrada;
+    private Scanner entrada;
 
     /*
      * O construtor cria os atributos da classe
