@@ -79,8 +79,7 @@ public class Programa {
     private void postarTexto() {
         String autor, mensagem;
         
-        System.out.println("Digite o autor:");
-        autor = entrada.nextLine();
+        autor = digitarAutor();
         
         System.out.println("Digite a mensagem de texto:");
         mensagem = entrada.nextLine();
@@ -94,8 +93,7 @@ public class Programa {
     private void postarFoto() {
         String autor, foto, legenda;
         
-        System.out.println("Digite o autor:");
-        autor = entrada.nextLine();
+        autor = digitarAutor();
         
         System.out.println("Digite o arquivo da foto:");
         foto = entrada.nextLine();
@@ -104,5 +102,10 @@ public class Programa {
         legenda = entrada.nextLine();
         
         feed.postarMensagemFoto(autor, foto, legenda);
+    }
+
+    private String digitarAutor() {
+        System.out.println("Digite o autor:");
+        return entrada.nextLine();
     }
 }
